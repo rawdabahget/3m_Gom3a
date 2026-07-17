@@ -31,20 +31,18 @@ We deliberately chose to stick to the fundamentals to keep the site incredibly l
 ### 2. Home Page - Hero & Offers Slider
 ![Home Slider](Home_page.png)
 
-### 3. Home Page - Featured Products & Introduction
-![Featured Products](featured_products.png)
 
-### 4. Products Catalog Page
+### 3. Products Catalog Page
 ![Products Page](products.png)
 
-### 5. Interactive Shopping Cart
+### 4. Interactive Shopping Cart
 ![Cart Page](cart.png)
 
-### 6. About Page - Introduction & Brand Story
+### 5. About Page - Introduction & Brand Story
 ![About Intro](about_intro.png)
 
-### 7. About Page - Our Core Values & Timeline Journey
-![Our Values and Journey](about_values.png)
+### 6. About Page - Our Core Values & Timeline Journey
+![Our Values and Journey](about_values .png)
 
 ---
 
