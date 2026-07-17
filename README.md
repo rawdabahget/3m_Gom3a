@@ -56,7 +56,3 @@ This project was built with a lot of coding hours (and probably a few actual ice
 * **Rawda Mohamed**
 * **Basel Ahmed**
 * **Seif Islam**
-* **Ahmed Ali**
-* **Rawda Mohamed**
-* **Basel Ahmed**
-* **Seif Islam**
