@@ -42,7 +42,7 @@ We deliberately chose to stick to the fundamentals to keep the site incredibly l
 ![About Intro](about_intro.png)
 
 ### 6. About Page - Our Core Values & Timeline Journey
-![Our Values and Journey](about_values .png)
+![Our Values and Journey](about_values.png)
 
 ---
 
