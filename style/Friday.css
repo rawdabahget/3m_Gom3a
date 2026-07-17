@@ -1,0 +1,271 @@
+:root {
+  color-scheme: light dark;
+  --bg-color: url("../img/background_1.png");
+  --text-color: #1e3a8a;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: var(--bg-color);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-attachment: fixed;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 2;
+  transition: background-color 0.2s;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 2;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.dot.active {
+  background-color: #ffffff;
+}
+
+.featured-section {
+  padding: 60px 20px;
+  text-align: center;
+
+  font-family: "Fredoka", sans-serif;
+}
+
+.featured-section h2 {
+  color: var(--text-color);
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  width: 240px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+  border-color: #1e40af;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  color: #0a2540;
+  font-size: 18px;
+  margin: 0;
+}
+
+.view-all-btn {
+  display: inline-block;
+  background-color: var(--primary-dark);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #132558;
+}
+
+.about-section {
+  padding: 60px 20px;
+  /* background-image: var(--bg-color); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Fredoka", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.about-images-wrapper {
+  display: flex;
+  width: 48%;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.about-logo {
+  width: 38%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.about-char {
+  width: 62%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.about-content {
+  width: 48%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.about-content h2 {
+  color: var(--text-color);
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.about-btn {
+  display: inline-block;
+  background-color: var(--primary-dark);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.about-btn:hover {
+  background-color: #132558;
+}
+
+/* Dark Mode overrides */
+.dark-mode body {
+  background-image: url("../img/backdark.png") !important;
+  color: #ffffff;
+}
+
+.dark-mode .featured-section h2 {
+  color: #ffffff;
+}
+
+.dark-mode .product-card {
+  background-color: #1e1e1e;
+  border-color: #333333;
+}
+
+.dark-mode .product-card h3 {
+  color: #ffffff;
+}
+
+.dark-mode .about-content h2,
+.dark-mode .about-content p {
+  color: #ffffff;
+}

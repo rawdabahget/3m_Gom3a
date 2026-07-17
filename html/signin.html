@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../style/color palette.css" />
+    <link rel="stylesheet" href="../style/signin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Friday Icecream</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="signin-header-bar">
+        <div class="signin-theme-toggle">
+          <a href="#" class="theme-toggle light-ice-link">
+            <img src="../img/dark-mode.png" alt="Switch to Dark Mode" class="nav-icon-img light-ice" />
+          </a>
+          <a href="#" class="theme-toggle dark-ice-link">
+            <img src="../img/light-mode.png" alt="Switch to Light Mode" class="nav-icon-img dark-ice" />
+          </a>
+        </div>
+      </div>
+
+      <div class="gomla">
+        <h1 class="textSignin">Welcome!</h1>
+        <p class="paragraph">
+          Discover your favorite product with unique Flavor
+        </p>
+      </div>
+
+      <div class="signINWsignOutForm">
+        <div class="welcomeBack" id="signInForm">
+          <header class="headerForm"><h1>Welcome Back</h1></header>
+          <p>Sign in to your Friday Faves.</p>
+
+          <input type="email" id="signin-email" placeholder="Email" />
+          <input type="password" id="signin-password" placeholder="Password" />
+
+          <span class="checkbox">
+            <input type="checkbox" id="signin-remember" />
+            <p>Remember Me</p>
+          </span>
+          <a href="#">Forgot Password?</a>
+
+          <button class="SignInColor" id="signin-btn">Sign In</button>
+
+          <div class="socialSignIn">
+            <header class="socialSignInHeader">social sign in</header>
+
+            <a href="#" class="s">
+              <span class="signUpWithGoogle">
+                <i class="fa fa-google"></i>
+                <p>Sign In with Google</p>
+              </span>
+            </a>
+            <a href="#" class="s">
+              <span class="signUpWithFacebook">
+                <i class="fa fa-facebook"></i>
+                <p>Sign In with Facebook</p>
+              </span>
+            </a>
+
+            <p
+              style="
+                margin-top: 1.5em;
+                color: var(--text-light);
+                font-size: 0.9rem;
+              "
+            >
+              Don't have an account?
+            </p>
+            <button
+              type="button"
+              style="
+                background: none;
+                color: var(--primary-dark);
+                padding: 0;
+                box-shadow: none;
+                width: auto;
+              "
+              onclick="signup()"
+            >
+              Sign Up
+            </button>
+
+            <div class="3mGom3a">
+              <img src="../img/mini-character.png" alt="soret 3m gom3a" />
+            </div>
+            <div class="soretElBaskota">
+              <img src="../img/sandwich-removebg-preview.png" alt="Baskot" />
+            </div>
+          </div>
+        </div>
+
+        <div class="joinFridayFamily" id="signUpForm">
+          <header class="headerForm"><h1>Join the Friday Family!</h1></header>
+          <p>
+            Create an account for exclusive sweet treats and faster checkout.
+          </p>
+
+          <input type="text" id="signup-name" placeholder="Full Name" />
+          <input type="email" id="signup-email" placeholder="Email / Phone" />
+          <input type="password" id="signup-password" placeholder="Password" />
+          <input
+            type="password"
+            id="signup-confirm"
+            placeholder="Confirm Password"
+          />
+
+          <span class="checkbox">
+            <input type="checkbox" id="signup-terms" />
+            <p>
+              I agree to the <a href="#">Terms & Conditions</a> and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </span>
+
+          <button class="SignUpColor" id="signup-btn">Sign Up</button>
+
+          <div class="socialSignUp">
+            <header class="socialSignUpHeader">social sign up</header>
+
+            <a href="#" class="s">
+              <span class="signUpWithGoogle">
+                <i class="fa fa-google"></i>
+                <p>Sign Up with Google</p>
+              </span>
+            </a>
+            <a href="#" class="s">
+              <span class="signUpWithFacebook">
+                <i class="fa fa-facebook"></i>
+                <p>Sign Up with Facebook</p>
+              </span>
+            </a>
+
+            <span class="alreadyHaveAnAccount"></span>
+            <p>Already have an account?</p>
+
+            <button type="button" onclick="log_in()">Sign In</button>
+          </div>
+
+          <div class="3mGom3a">
+            <img src="../img/mini-character.png" alt="soret 3m gom3a" />
+          </div>
+          <div class="soretElBaskota">
+            <img src="../img/sandwich-removebg-preview.png" alt="Baskot" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/darkswitch.js"></script>
+    <script src="../script/validation.js"></script>
+    <script src="../script/animation.js"></script>
+  </body>
+</html>

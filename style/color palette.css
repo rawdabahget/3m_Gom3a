@@ -1,0 +1,33 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e3a8a;
+
+  --background: #f8fafc;
+  --surface: #ffffff;
+
+  --text: #1e3a8a;
+  --text-light: #6b7280;
+
+  --border: #dbeafe;
+
+  --pink: #f472b6;
+  --green: #84cc16;
+  --purple: #8b5cf6;
+  --orange: #fb923c;
+  --cream: #ffe8b6;
+  --brown: #8b5a2b;
+
+  --favorite: #ef4444;
+  --star: #fbbf24;
+  --success: #22c55e;
+  --sale: #ef4444;
+  --new: #3b82f6;
+
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 18px 40px rgba(0, 0, 0, 0.15);
+
+  --radius-card: 20px;
+  --radius-button: 12px;
+  --radius-input: 12px;
+  --radius-pill: 50px;
+}

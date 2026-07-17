@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/color palette.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="footer-container">
+      <div class="footer-body">
+        <div class="logo-container-footer">
+          <span>
+            <img src="../img/logo.png" alt="" class="logo-footer" style="width: 8em" />
+          </span>
+          <p class="logo-text-footer">
+            Friday Ice Cream brings happiness to every moment with delicous ice
+            cream and refreshing drinks
+          </p>
+        </div>
+        <div class="quick-links">
+          <p class="quick-link footer-text">Quick Links</p>
+          <ul class="quick-link-list">
+            <li><a href="Friday.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <div class="newsletter-text footer-text">Newsletter</div>
+          <p class="subscribe-txt">
+            Subscribe to get special offers and updates
+          </p>
+          <form action="" class="email-submit">
+            <input type="email" name="" id="" placeholder="email" required />
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright-footer">
+        <p>
+          &copy; <span id="year"></span> Friday Ice Cream. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>

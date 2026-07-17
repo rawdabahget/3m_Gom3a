@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/color palette.css" />
+    <link rel="stylesheet" href="../style/nav.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/cart.css" />
+    <script src="../script/darkswitch.js"></script>
+  </head>
+  <body>
+    <div class="cart-container">
+      <div class="nav-container">
+        <div class="announcement-bar">
+          <p>🎉50% OFF ON ALL ITEMS EVERY FRIDAY!</p>
+        </div>
+        <div class="nav-body">
+          <img src="../img/logo.png" alt="" class="logo" style="width: 9em" />
+          <ul class="nav-btns">
+            <a href="Friday.html">
+              <li>Home</li>
+            </a>
+            <a href="products.html">
+              <li>Products</li>
+            </a>
+            <a href="about.html">
+              <li>About</li>
+            </a>
+            <a href="contact.html">
+              <li>Contact</li>
+            </a>
+          </ul>
+          <div class="icons">
+            <a href="" class="theme-toggle"
+              ><img
+                src="../img/dark-mode.png"
+                alt=""
+                class="theme-toggle nav-icon-img light-ice"
+            /></a>
+            <a href="" class="theme-toggle"
+              ><img
+                src="../img/light-mode.png"
+                alt=""
+                class="theme-toggle nav-icon-img dark-ice"
+            /></a>
+
+
+<!--  -->
+<div class="wishlist-container">
+            <a href="#" class="wishlist-header-btn">
+                <i class="fa-regular fa-heart"></i>
+                  <span class="wishlist-count">0</span>
+            </a>
+    <div class="wishlist-dropdown">
+              <div class="wishlist-dropdown-header">
+                <h3 class="wishlist-dropdown-title">Your Wishlist</h3>
+                <span class="wishlist-items-count">0 items</span>
+              </div>
+
+     <div class="wishlist-items-container">
+      <p class="empty-wishlist-msg">Your wishlist is empty</p>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+
+
+
+
+            <a href="cart.html" class="cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a href="nav.html" class="user-account"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+            <a href="signin.html" style="font-size: 1rem" class="sign-out-nav"
+              >sign out</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="headings-div">
+        <h1 class="shopping-header">Your Shopping Cart</h1>
+        <p class="items-in-cart">You have 2 items in your cart!</p>
+      </div>
+      <div class="cart-items-container">
+        <div class="cart-items cart-div">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th class="col-item">Cart Item</th>
+                <th class="col-qty">Quantity</th>
+                <th class="col-price">Unit Price</th>
+                <th class="col-total">Line Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="product-cell">
+                  <div class="product-index">1</div>
+                  <div class="product-info">
+                    <button class="action-btn heart-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img
+                      src="../img/image1.jpg"
+                      alt="Volcano Cone"
+                      class="product-img"
+                    />
+                    <span class="product-name">Red Velvet Sandwich</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="quantity-control">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                </td>
+                <td class="bold-text">60 EGP</td>
+                <td class="bold-text">
+                  <div class="total-cell">
+                    <span>60 EGP</span>
+                    <button class="action-btn delete-btn">
+                      <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-cell">
+                  <div class="product-index">2</div>
+                  <div class="product-info">
+                    <button class="action-btn heart-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img
+                      src="../img/image2.jpg"
+                      alt="Vanilla Tub"
+                      class="product-img"
+                    />
+                    <span class="product-name">Berry Cola</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="quantity-control">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                </td>
+                <td class="bold-text">60 EGP</td>
+                <td class="bold-text">
+                  <div class="total-cell">
+                    <span>60 EGP</span>
+                    <button class="action-btn delete-btn">
+                      <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right Side: Order Summary -->
+        <div class="cart-total cart-div">
+          <h3 class="summary-title">Order Summary</h3>
+          <div class="summary-row">
+            <span class="label">Subtotal (2 items):</span>
+            <span class="val bold-text">120 EGP</span>
+          </div>
+          <div class="summary-row">
+            <span class="label">Delivery Fee:</span>
+            <span class="val text-right">10<br /></span>
+          </div>
+          <div class="summary-row">
+            <span class="label">Discount (FRIDAYICE):</span>
+            <span class="val bold-text discount-val">-10 EGP</span>
+          </div>
+          <hr class="summary-hr" />
+          <div class="summary-row total-row">
+            <span class="label">Total:</span>
+            <span class="val">120 EGP</span>
+          </div>
+
+          <label class="coupon-label">Apply Coupon</label>
+          <form action="" class="cart-form">
+            <input type="text" name="" id="" placeholder="Apply Coupon" />
+            <button type="submit" class="btn-apply">Apply</button>
+          </form>
+
+          <button class="btn-checkout">Proceed to Checkout</button>
+          <div class="continue-shopping-box">
+            <a href="#" class="continue-shopping">Continue Shopping</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-body">
+          <div class="logo-container-footer">
+            <span>
+              <img
+                src="../img/logo.png"
+                alt=""
+                class="logo-footer"
+                style="width: 8em"
+              />
+            </span>
+            <p class="logo-text-footer">
+              Friday Ice Cream brings happiness to every moment with delicous
+              ice cream and refreshing drinks
+            </p>
+          </div>
+          <div class="quick-links">
+            <p class="quick-link footer-text">Quick Links</p>
+            <ul class="quick-link-list">
+              <li><a href="Friday.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <div class="newsletter-text footer-text">Newsletter</div>
+            <p class="subscribe-txt">
+              Subscribe to get special offers and updates
+            </p>
+            <form action="" class="email-submit">
+              <input type="email" name="" id="" placeholder="email" required />
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright-footer">
+          <p>
+            &copy; <span id="year"></span> Friday Ice Cream. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Checkout Confirmation Modal -->
+    <div class="checkout-modal-overlay">
+      <div class="checkout-modal-card">
+        <div class="checkout-modal-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h2 class="checkout-modal-title">Order Received!</h2>
+        <p class="checkout-modal-text">
+          Thank you for your order! Your Friday Faves have been confirmed and will be on their way shortly.
+        </p>
+        <button class="checkout-modal-btn">Awesome!</button>
+      </div>
+    </div>
+  </body>
+  <script src="../script/wishlist-global.js"></script>
+  <script src="../script/darkswitch.js"></script>
+  <script src="../script/cart.js"></script>
+  <script>
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  </script>
+</html>

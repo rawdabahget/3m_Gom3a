@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Friday Ice Cream</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/color palette.css" />
+    <link rel="stylesheet" href="../style/nav.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <script src="../script/darkswitch.js"></script>
+    <link rel="preload" href="../music.mp3" as="audio" type="audio/mpeg" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg-color: url("../img/background_1.png");
+        --text-color: black;
+      }
+      body {
+        background-image: var(--bg-color);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+      }
+      .main-content-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        margin: 2em auto;
+        max-width: 1200px;
+        padding: 2em;
+        border-radius: 20px;
+      }
+      .story-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+      }
+      @media (max-width: 768px) {
+        .story-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .story-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 400px;
+      }
+      #customIceCreamCanvas {
+        width: 400px !important;
+        height: 400px !important;
+        outline: none;
+      }
+      .value-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 15px auto;
+      }
+      .value-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="bg-audio" loop preload="auto">
+      <source src="../music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- LTR Nav bar -->
+    <div class="nav-container" dir="ltr">
+      <div class="announcement-bar">
+        <p>🎉50% OFF ON ALL ITEMS EVERY FRIDAY!</p>
+      </div>
+      <div class="nav-body">
+        <img src="../img/logo.png" alt="" class="logo" style="width: 9em" />
+        <ul class="nav-btns">
+          <a href="Friday.html">
+            <li>Home</li>
+          </a>
+          <a href="products.html">
+            <li>Products</li>
+          </a>
+          <a href="about.html">
+            <li>About</li>
+          </a>
+          <a href="contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+        <div class="icons">
+          <a href="" class="theme-toggle"
+            ><img
+              src="../img/dark-mode.png"
+              alt=""
+              class="theme-toggle nav-icon-img light-ice"
+          /></a>
+          <a href="" class="theme-toggle"
+            ><img
+              src="../img/light-mode.png"
+              alt=""
+              class="theme-toggle nav-icon-img dark-ice"
+          /></a>
+
+
+
+          <!-- /////////////////////////////new//////////////////////////////////////////////// -->
+          <div class="wishlist-container">
+  <a href="#" class="wishlist-header-btn">
+    <i class="fa-regular fa-heart"></i>
+    <span class="wishlist-count">0</span>
+  </a>
+
+  <div class="wishlist-dropdown">
+    <div class="wishlist-dropdown-header">
+      <h3 class="wishlist-dropdown-title">Your Wishlist</h3>
+      <span class="wishlist-items-count">0 items</span>
+    </div>
+
+    <div class="wishlist-items-container">
+      <p class="empty-wishlist-msg">Your wishlist is empty</p>
+    </div>
+
+    <!-- <a href="wishlist.html" class="view-wishlist-btn">View Full Wishlist</a> -->
+  </div>
+</div>
+<!--  -->
+
+          <a href="cart.html" class="cart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="nav.html" class="user-account"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+          <a href="signin.html" style="font-size: 1rem">sign out</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RTL Content -->
+    <section class="hero-title-section">
+      <h1>About Friday Ice Cream</h1>
+      <p>اكتشف منتجك المفضل من فرايداي بنكهته الفريدة</p>
+      <div class="title-underline"></div>
+    </section>
+
+    <main class="main-content-card">
+      <section class="our-story-section">
+        <div class="story-grid">
+          <div class="story-text">
+            <h2>قصتنا: صناعة السعادة منذ 1960</h2>
+            <p>
+              بدأت رؤية التميز بتقديم منتجات مبتكرة ونكهات فريدة تسعد القلوب
+              يومًا بعد يوم. انطلقت العلامة التجارية بشغف كبير لتقديم جودة لا
+              تقارن في عالم الآيس كريم، لتصبح خيارًا أساسيًا لكل عشاق المذاق
+              المميز.
+            </p>
+            <p>
+              من عربة آيس كريم بسيطة وأفكار طموحة، تطورنا لنصنع تشكيلة واسعة
+              تلبي جميع الأذواق مع الحفاظ على الأصالة والجودة العالية في كل
+              تفصيلة.
+            </p>
+          </div>
+          <div class="story-image">
+            <canvas id="customIceCreamCanvas"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section class="values-section">
+        <h3 class="sub-section-title">قيمنا (Our Values)</h3>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">
+              <img src="../img/ice-cream03.png" alt="ضمان الجودة" />
+            </div>
+            <h4>ضمان الجودة</h4>
+            <p>
+              نطبق أعلى معايير الجودة والسلامة الغذائية في كل منتج، لنضمن لك
+              طعماً مثالياً وثقة لا تتزعزع.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <img src="../img/ice-cream04.png" alt="مجتمع سعيد" />
+            </div>
+            <h4>مجتمع سعيد</h4>
+            <p>
+              نرسم البسمة على وجوه فريقنا وعملائنا، لأننا نؤمن أن اللحظات
+              الجميلة تصبح أفضل عندما تُشارَك.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <img src="../img/ice-cream02.png" alt="صديق للبيئة" />
+            </div>
+            <h4>صديق للبيئة</h4>
+            <p>
+              نصنع السعادة بمسؤولية، من خلال دعم المزارع المحلية وتقليل
+              الانبعاثات في كافة مراحل الإنتاج.
+            </p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">
+              <img src="../img/ice-cream01.png" alt="مطبخ مبتكر" />
+            </div>
+            <h4>مطبخ مبتكر</h4>
+            <p>
+              شغفنا هو التجديد؛ ندمج المكونات الطازجة لنقدم لك تجربة آيس كريم
+              مبتكرة في كل موسم.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="journey-section">
+        <h3 class="sub-section-title">مسيرتنا (Our Journey)</h3>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          <div class="timeline-grid">
+            <div class="timeline-node">
+              <span class="year">1960</span>
+              <p>افتتاح أول فرع لنا</p>
+            </div>
+            <div class="timeline-node">
+              <span class="year">2001</span>
+              <p>إطلاق خط إنتاج جديد</p>
+            </div>
+            <div class="timeline-node">
+              <span class="year">2020</span>
+              <p>ابتكار نكهات حصرية</p>
+            </div>
+            <div class="timeline-node">
+              <span class="year">2026</span>
+              <p>حصد جوائز التميز والابتكار</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-section">
+        <div class="team-grid">
+          <div class="visionary-box">
+            <h3>الرؤية: حلم عمو جمعه</h3>
+            <p>
+              تلتزم مجموعة جمعة الاقتصادية بالريادة في صناعة الآيس كريم
+              والمثلجات، وتحقيق التنمية المستدامة للاقتصاد الوطني، ورفع جودة
+              المنتج المصري ليكون بديلاً غذائياً آمناً للأطفال في مصر والعالم.
+            </p>
+            <img src="../img/3mo.png" alt="المؤسس" class="founder-img" />
+          </div>
+          <div class="staff-box">
+            <h3>تعرف على الفريق</h3>
+            <div class="staff-grid">
+              <div class="member-card">
+                <img src="../img/emp.png" alt="رئيس النكهات" />
+                <h5>رئيس قسم النكهات</h5>
+                <p>مسؤول الابتكار والتطوير</p>
+              </div>
+              <div class="member-card">
+                <img src="../img/ceo.png" alt="مدير العمليات" />
+                <h5>مدير العمليات</h5>
+                <p>تنظيم ومتابعة الجودة والإنتاج</p>
+              </div>
+              <div class="member-card">
+                <img src="../img/cto.png" alt="مسؤول المجتمع" />
+                <h5>مسؤول التواصل</h5>
+                <p>إدارة مجتمع عملاء فرايداي</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- LTR Footer -->
+    <div class="footer-container" dir="ltr">
+      <div class="footer-body">
+        <div class="logo-container-footer">
+          <span>
+            <img
+              src="../img/logo.png"
+              alt=""
+              class="logo-footer"
+              style="width: 8em"
+            />
+          </span>
+          <p class="logo-text-footer">
+            Friday Ice Cream brings happiness to every moment with delicous
+            ice cream and refreshing drinks
+          </p>
+        </div>
+        <div class="quick-links">
+          <p class="quick-link footer-text">Quick Links</p>
+          <ul class="quick-link-list">
+            <li><a href="Friday.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <div class="newsletter-text footer-text">Newsletter</div>
+          <p class="subscribe-txt">
+            Subscribe to get special offers and updates
+          </p>
+          <form action="" class="email-submit">
+            <input type="email" name="" id="" placeholder="email" required />
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright-footer">
+        <p>
+          &copy; <span id="year"></span> Friday Ice Cream. All rights reserved.
+        </p>
+      </div>
+    </div>
+    <script src="../script/wishlist-global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // Instant audio buffering and rapid playback handler
+      const audio = document.getElementById("bg-audio");
+      let musicStarted = false;
+
+      if (audio) {
+        audio.load(); // Immediately start downloading and buffering audio stream
+      }
+
+      function startMusic() {
+        if (musicStarted || !audio) return;
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              musicStarted = true;
+            })
+            .catch(() => {
+              // Browser autoplay policy blocked immediate play; will trigger on first interaction
+            });
+        }
+      }
+
+      // Attempt immediate play on page load
+      startMusic();
+
+      // Trigger instantly on any user interaction event
+      ["pointerdown", "click", "keydown", "scroll", "touchstart", "mouseover"].forEach((evt) => {
+        document.addEventListener(evt, startMusic, { once: true, passive: true });
+      });
+
+      // 3D Model setup
+      const canvas = document.querySelector("#customIceCreamCanvas");
+      if (canvas) {
+        const scene = new THREE.Scene();
+
+        const renderer = new THREE.WebGLRenderer({
+          canvas: canvas,
+          alpha: true,
+          antialias: true,
+        });
+        renderer.outputEncoding = THREE.sRGBEncoding;
+
+        renderer.setSize(400, 400);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+        camera.position.set(0, 2, 7);
+        camera.lookAt(0, 0, 0);
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.8);
+        scene.add(ambientLight);
+
+        const dirLight1 = new THREE.DirectionalLight(0xffffff, 1.5);
+        dirLight1.position.set(5, 10, 7);
+        scene.add(dirLight1);
+
+        const dirLight2 = new THREE.DirectionalLight(0xffffff, 0.8);
+        dirLight2.position.set(-5, 5, -5);
+        scene.add(dirLight2);
+
+        let myModel;
+        const loader = new THREE.GLTFLoader();
+
+        loader.load(
+          "ice_cream_shop.glb",
+          function (gltf) {
+            myModel = gltf.scene;
+
+            const box = new THREE.Box3().setFromObject(myModel);
+            const size = box.getSize(new THREE.Vector3());
+            const center = box.getCenter(new THREE.Vector3());
+
+            const maxDim = Math.max(size.x, size.y, size.z);
+            const scale = 3.0 / maxDim;
+            myModel.scale.set(scale, scale, scale);
+
+            box.setFromObject(myModel);
+            box.getCenter(center);
+            myModel.position.sub(center);
+
+            scene.add(myModel);
+          },
+          undefined,
+          function (error) {
+            console.error(error);
+          },
+        );
+
+        function animate() {
+          requestAnimationFrame(animate);
+
+          if (myModel) {
+            myModel.rotation.y += 0.005;
+            myModel.position.y = Math.sin(Date.now() * 0.001) * 0.03;
+          }
+
+          renderer.render(scene, camera);
+        }
+        animate();
+      }
+    </script>
+  </body>
+</html>

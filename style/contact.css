@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light dark;
+  --bg-color: url("../img/background_1.png");
+  --text-color: black;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-image: var(--bg-color);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+.contact-heading {
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  h2 {
+    padding-top: 1em;
+    color: var(--primary-dark);
+    font-size: 5rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+}
+
+/* Dark Mode overrides */
+.dark-mode .contact-container {
+  background-image: url("../img/backdark.png") !important;
+}
+
+.dark-mode .contact-heading h2 {
+  color: #ffffff !important;
+}
+
+.dark-mode .contact-heading h4 {
+  color: #ffffff !important;
+}

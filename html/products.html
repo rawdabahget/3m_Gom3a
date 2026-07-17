@@ -1,0 +1,703 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/color palette.css" />
+    <link rel="stylesheet" href="../style/products.css" />
+    <link rel="stylesheet" href="../style/nav.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <script src="../script/darkswitch.js"></script>
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <div class="announcement-bar">
+        <p>🎉50% OFF ON ALL ITEMS EVERY FRIDAY!</p>
+      </div>
+      <div class="nav-body">
+        <img src="../img/logo.png" alt="" class="logo" style="width: 9em" />
+        <ul class="nav-btns">
+          <a href="Friday.html">
+            <li>Home</li>
+          </a>
+          <a href="products.html">
+            <li>Products</li>
+          </a>
+          <a href="about.html">
+            <li>About</li>
+          </a>
+          <a href="contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+        <div class="icons">
+          <a href="" class="theme-toggle"
+            ><img
+              src="../img/dark-mode.png"
+              alt=""
+              class="theme-toggle nav-icon-img light-ice"
+          /></a>
+          <a href="" class="theme-toggle"
+            ><img
+              src="../img/light-mode.png"
+              alt=""
+              class="theme-toggle nav-icon-img dark-ice"
+          /></a>
+          
+<!-- /////////////////////////////new//////////////////////////////////////////////// -->
+          <div class="wishlist-container">
+  <a href="#" class="wishlist-header-btn">
+    <i class="fa-regular fa-heart"></i>
+    <span class="wishlist-count">0</span>
+  </a>
+
+  <div class="wishlist-dropdown">
+    <div class="wishlist-dropdown-header">
+      <h3 class="wishlist-dropdown-title">Your Wishlist</h3>
+      <span class="wishlist-items-count">0 items</span>
+    </div>
+
+    <div class="wishlist-items-container">
+      <p class="empty-wishlist-msg">Your wishlist is empty</p>
+    </div>
+
+    <!-- <a href="wishlist.html" class="view-wishlist-btn">View Full Wishlist</a> -->
+  </div>
+</div>
+<!--  -->
+
+
+          
+
+          <a href="cart.html" class="cart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="nav.html" class="user-account"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+          <a href="signin.html" style="font-size: 1rem" class="sign-out-nav"
+            >sign out</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="hero">
+        <section class="products">
+          <h1>Our Products</h1>
+          <p>Discover your favorite Friday Product with unique Flavor</p>
+
+          <div class="block">
+            <!-- search bar -->
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+              <input
+                type="text"
+                id="item"
+                placeholder="what is your fav product?"
+              />
+            </div>
+
+            <!-- Categories -->
+            <div class="cat">
+              <button class="cat_btn">
+                Categories <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul class="list">
+                <li class="All">All</li>
+                <li class="Cones">Cones</li>
+                <li class="Sandwiches">Sandwiches</li>
+                <li class="Sticks">Sticks</li>
+                <li class="Volcano">Volcano</li>
+                <li class="Combos">Combos</li>
+                <li class="Tubs">Tubs</li>
+                <li>Drinks</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="filter">
+            <div class="showing">Showing <span>16</span> Products</div>
+            <div class="sort-by">
+              <label for="sort">Sort By: </label>
+              <select id="sort">
+                <option value="newest">Newest</option>
+                <option value="popular">Popular</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products-grid">
+            <!-- Product 1 (Drinks) -->
+            <div class="product-card" data-category="Drinks">
+              <span class="badge new">NEW</span>
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/can01.jpg" alt="Friday Cola" />
+              </div>
+              <div class="product-info">
+                <h3>Friday Cola</h3>
+                <p class="desc">Refreshing sparkling cola drink with classic rich flavor.</p>
+                <div class="rating">
+                  <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>3.5</span>
+                  <span class="num">(1.8k)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">15 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 (Drinks) -->
+            <div class="product-card" data-category="Drinks">
+              <span class="badge new">NEW</span>
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/can02.jpg" alt="pink lemonada" />
+              </div>
+              <div class="product-info">
+                <h3>Pink Lemonada</h3>
+                <p class="desc">Sweet and zesty pink lemonade sparkling soda drink.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>3.0</span>
+                  <span class="num">(540)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">15 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 (Drinks) -->
+            <div class="product-card" data-category="Drinks">
+              <span class="badge new">NEW</span>
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/can03.jpg" alt="Mojito Lemon Mint" />
+              </div>
+              <div class="product-info">
+                <h3>Mojito Lemon Mint</h3>
+                <p class="desc">A refreshing minty mojito with a zesty squeeze of fresh lemon.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span>4.8</span>
+                  <span class="num">(2.3k)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">15 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 (Tubs) -->
+            <div class="product-card" data-category="Tubs">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice010.jpg" alt="5G Mixed Berries" />
+              </div>
+              <div class="product-info">
+                <h3>5G Mixed Berries Tub</h3>
+                <p class="desc">Creamy ice cream tub packed with sweet mixed forest berries flavor.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span>5.0</span>
+                  <span class="num">(820)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 (Drinks) -->
+            <div class="product-card" data-category="Drinks">
+              <span class="badge new">NEW</span>
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/can04.jpg" alt="Friday Orange" />
+              </div>
+              <div class="product-info">
+                <h3>Friday Cola</h3>
+                <p class="desc">Tangy and refreshing cola sparkling soda</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>3.8</span>
+                  <span class="num">(120)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">15 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 (Sticks) -->
+            <div class="product-card" data-category="Sticks">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice01.jpg" alt="Freitag Caramel Stick" />
+              </div>
+              <div class="product-info">
+                <h3>Freitag Chocolate Hazelnut Stick</h3>
+                <p class="desc">Rich chocolate-coated ice cream stick bar with hazelnut flavor</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span>4.5</span>
+                  <span class="num">(980)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 7 (Sandwiches) -->
+            <div class="product-card" data-category="Sandwiches">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice02.jpg" alt="Red Velvet Wich" />
+              </div>
+              <div class="product-info">
+                <h3>Red Velvet Wich</h3>
+                <p class="desc">Premium velvet sandwich cookies filled with rich vanilla ice cream</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>4.0</span>
+                  <span class="num">(1.1k)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">20 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 8 (Sticks) -->
+            <div class="product-card" data-category="Sticks">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice03.jpg" alt="Choco-Nuts Stick" />
+              </div>
+              <div class="product-info">
+                <h3>Friday Watermelon Ice Cream / Watermelon Stick</h3>
+                <p class="desc">Refreshing watermelon flavored ice cream stick.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span>4.7</span>
+                  <span class="num">(3.1k)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 9 (Sticks) -->
+            <div class="product-card" data-category="Sticks">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice04.jpg" alt="Mango Zebdia" />
+              </div>
+              <div class="product-info">
+                <h3>Mango Zebdia</h3>
+                <p class="desc">Delicious frozen yogurt ice cream stick with sweet mango flavor.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span>4.9</span>
+                  <span class="num">(4.2k)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 10 (Sticks) -->
+            <div class="product-card" data-category="Sticks">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice012.jpg" alt="Mango Vanilla Duo" />
+              </div>
+              <div class="product-info">
+                <h3>Mango Vanilla Duo</h3>
+                <p class="desc">Perfect double twist of natural mango juice and vanilla ice stick.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>4.2</span>
+                  <span class="num">(670)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 11 (Sticks) -->
+            <div class="product-card" data-category="Sticks">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice011.jpg" alt="Friday Bob Stick" />
+              </div>
+              <div class="product-info">
+                <h3>Friday Bob Stick</h3>
+                <p class="desc">Playful dual-swirl lollipop ice cream stick with sweet caramel flavor.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span>4.6</span>
+                  <span class="num">(1.5k)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 12 (Tubs) -->
+            <div class="product-card" data-category="Tubs">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice09.jpg" alt="Strawberry 5G Tub" />
+              </div>
+              <div class="product-info">
+                <h3>Strawberry 5G Tub</h3>
+                <p class="desc">A velvety premium strawberry cup to double your dessert happiness.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>3.7</span>
+                  <span class="num">(830)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 13 (Volcano) -->
+            <div class="product-card" data-category="Volcano">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice06.jpg" alt="Volcano Chocolate Cone" />
+              </div>
+              <div class="product-info">
+                <h3>Volcano Chocolate</h3>
+                <p class="desc">Crispy cone filled with heavy chocolate cream and an exploding syrup core.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span>4.9</span>
+                  <span class="num">(2.1k)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 14 (Cones) -->
+            <div class="product-card" data-category="Cones">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice07.jpg" alt="Friday Royal Cone" />
+              </div>
+              <div class="product-info">
+                <h3>Friday Royal Cone</h3>
+                <p class="desc">Classic rich chocolate ice cream scoop inside a royal crunchy wafer cone.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span>4.4</span>
+                  <span class="num">(1.9k)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 15 (Sticks) -->
+            <div class="product-card" data-category="Sticks">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice05.jpg" alt="Freitag Hazelnut Bar" />
+              </div>
+              <div class="product-info">
+                <h3>Freitag Hazelnut Bar</h3>
+                <p class="desc">Chocolate ice cream bar coated in dark chocolate cover and crunchy hazelnuts.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>4.1</span>
+                  <span class="num">(940)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 16 (Sticks) -->
+            <div class="product-card" data-category="Sticks">
+              <button class="wishlist-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <div class="product-img">
+                <img src="../img/ice08.jpg" alt="Friday Peach Lollipop" />
+              </div>
+              <div class="product-info">
+                <h3>Friday Peach Lollipop</h3>
+                <p class="desc">Refreshing and icy stick lollipop loaded with natural, sweet peach juices.</p>
+                <div class="rating">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>3.9</span>
+                  <span class="num">(720)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">10 EGP</span>
+                  <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <button class="load-more-btn">
+            Load More Products <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </section>
+      </div>
+    </main>
+    <div class="footer-container">
+      <div class="footer-body">
+        <div class="logo-container-footer">
+          <span>
+            <img
+              src="../img/logo.png"
+              alt=""
+              class="logo-footer"
+              style="width: 8em"
+            />
+          </span>
+          <p class="logo-text-footer">
+            Friday Ice Cream brings happiness to every moment with delicous ice
+            cream and refreshing drinks
+          </p>
+        </div>
+        <div class="quick-links">
+          <p class="quick-link footer-text">Quick Links</p>
+          <ul class="quick-link-list">
+            <li><a href="Friday.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <div class="newsletter-text footer-text">Newsletter</div>
+          <p class="subscribe-txt">
+            Subscribe to get special offers and updates
+          </p>
+          <form action="" class="email-submit">
+            <input type="email" name="" id="" placeholder="email" required />
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright-footer">
+        <p>
+          &copy; <span id="year"></span> Friday Ice Cream. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <footer></footer>
+  <script src="../script/wishlist-global.js"></script>
+  <script src="../script/products.js"></script>
+</html>

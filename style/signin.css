@@ -1,0 +1,516 @@
+/* Base Resets & Font */
+html, body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #1e3a8a;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background-image: url("../img/background_1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 1em 6em 1em;
+}
+
+.signin-header-bar {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2em;
+  padding: 0 1em;
+}
+
+.back-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-dark);
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.5em 1.2em;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.back-home-link:hover {
+  background: var(--primary-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.signin-theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.signin-theme-toggle .nav-icon-img {
+  height: 2.8em;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.signin-theme-toggle .nav-icon-img:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+/* Theme Toggle Display Logic for Signin */
+.signin-theme-toggle a:has(.light-ice),
+.light-ice {
+  display: inline-block !important;
+}
+
+.signin-theme-toggle a:has(.dark-ice),
+.dark-ice {
+  display: none !important;
+}
+
+.dark-mode .signin-theme-toggle a:has(.light-ice),
+.dark-mode .light-ice {
+  display: none !important;
+}
+
+.dark-mode .signin-theme-toggle a:has(.dark-ice),
+.dark-mode .dark-ice {
+  display: inline-block !important;
+}
+
+.gomla {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.textSignin {
+  font-family: "Fredoka", sans-serif;
+  font-size: 3.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.2em;
+}
+
+.paragraph {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.signINWsignOutForm {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+}
+
+.welcomeBack,
+.joinFridayFamily {
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-card);
+  padding: 3em;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.welcomeBack {
+  background-color: var(--surface);
+}
+
+.joinFridayFamily {
+  background-color: #e6f3fe;
+}
+
+.headerForm h1 {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  font-size: 2rem;
+  color: var(--text);
+}
+
+.welcomeBack > p,
+.joinFridayFamily > p {
+  color: var(--text-light);
+  margin-bottom: 2em;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 1em;
+  border: 1px solid transparent;
+  border-radius: var(--radius-input);
+  background-color: #fdf2ee;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+input::placeholder {
+  color: var(--text-light);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-top: 0.5em;
+  margin-bottom: 1.25em;
+  padding: 6px 0;
+}
+
+.checkbox input,
+.checkbox input[type="checkbox"] {
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 12px 0 0 !important;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+.checkbox p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.checkbox a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.welcomeBack .checkbox {
+  display: inline-flex;
+  width: 50%;
+}
+
+.welcomeBack > a {
+  display: inline-block;
+  width: 48%;
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-decoration: none;
+  transform: translateY(-20px);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: var(--radius-pill);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.SignInColor {
+  background-color: var(--primary-dark);
+}
+
+.SignUpColor {
+  background-color: var(--pink);
+}
+
+.socialSignIn,
+.socialSignUp {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.socialSignInHeader,
+.socialSignUpHeader {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin-bottom: 1.5em;
+  position: relative;
+  text-transform: lowercase;
+}
+
+.socialSignInHeader::before,
+.socialSignInHeader::after,
+.socialSignUpHeader::before,
+.socialSignUpHeader::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 1px;
+  background-color: var(--border);
+}
+
+.socialSignInHeader::before,
+.socialSignUpHeader::before {
+  left: 10%;
+}
+.socialSignInHeader::after,
+.socialSignUpHeader::after {
+  right: 10%;
+}
+
+.s {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0.8em;
+}
+
+.signUpWithGoogle,
+.signUpWithFacebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 10px;
+  background-color: var(--surface);
+  color: var(--text);
+  transition: background-color 0.2s;
+}
+
+.signUpWithGoogle p,
+.signUpWithFacebook p {
+  margin: 0 0 0 10px !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.signUpWithGoogle:hover,
+.signUpWithFacebook:hover {
+  background-color: var(--background);
+}
+
+.fa {
+  font-size: 20px !important;
+  padding: 0 !important;
+  width: auto !important;
+  background: transparent !important;
+}
+
+.fa-google {
+  color: #db4437 !important;
+}
+
+.fa-facebook {
+  color: #4267b2 !important;
+}
+
+.socialSignUp > p {
+  display: inline-block;
+  margin-top: 1.5em;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.socialSignUp > button {
+  display: inline-block;
+  width: auto;
+  background: none;
+  color: var(--primary-dark);
+  padding: 0;
+  margin: 0 0 0 5px;
+  font-size: 0.9rem;
+  box-shadow: none;
+}
+
+div[class*="3mGom3a"] {
+  position: absolute;
+  bottom: -60px;
+  left: -140px;
+  width: 350px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+div[class*="3mGom3a"] img {
+  width: 100%;
+  height: auto;
+}
+
+.soretElBaskota {
+  position: absolute;
+  bottom: -40px;
+  right: -80px;
+  width: 220px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.soretElBaskota img {
+  width: 100%;
+  height: auto;
+  transform: rotate(5deg);
+}
+
+.disable {
+  display: none !important;
+}
+
+.welcomeBack,
+.joinFridayFamily {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Dark Mode Overrides for Sign In Page */
+.dark-mode html,
+.dark-mode body {
+  background-color: #121212 !important;
+}
+
+.dark-mode .wrapper {
+  background-image: url("../img/backdark.png") !important;
+}
+
+.dark-mode .textSignin,
+.dark-mode .headerForm h1 {
+  color: #ffffff !important;
+}
+
+.dark-mode .paragraph,
+.dark-mode .welcomeBack > p,
+.dark-mode .joinFridayFamily > p {
+  color: #cccccc !important;
+}
+
+.dark-mode .welcomeBack,
+.dark-mode .joinFridayFamily {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="password"] {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+.dark-mode input::placeholder {
+  color: #888888 !important;
+}
+
+.dark-mode .socialSignInHeader,
+.dark-mode .socialSignUpHeader {
+  color: #cccccc !important;
+}
+
+.dark-mode .s span {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+.dark-mode .back-home-link {
+  background: rgba(30, 30, 30, 0.85) !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+.dark-mode .back-home-link:hover {
+  background: #3b82f6 !important;
+  border-color: #60a5fa !important;
+  color: #ffffff !important;
+}
+
+/* Inline Validation Styles */
+input.input-error {
+  border: 2px solid #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.dark-mode input.input-error {
+  background-color: #451a1a !important;
+  border-color: #ef4444 !important;
+}
+
+.input-error-msg {
+  color: #ef4444;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 4px 0 14px 2px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  line-height: 1.4;
+  position: relative;
+  z-index: 20;
+}
+
+.form-status-msg {
+  position: relative;
+  z-index: 50;
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.form-status-msg.success {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.form-status-msg.error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.dark-mode .form-status-msg.success {
+  background-color: #14532d !important;
+  color: #4ade80 !important;
+  border-color: #166534 !important;
+}
+
+.dark-mode .form-status-msg.error {
+  background-color: #450a0a !important;
+  color: #f87171 !important;
+  border-color: #7f1d1d !important;
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ice cream shop
+* source:	https://sketchfab.com/3d-models/ice-cream-shop-16e11f6ce9774679991fe27e7806c943
+* author:	Sergei Bashirov (https://sketchfab.com/failyren)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ice cream shop" (https://sketchfab.com/3d-models/ice-cream-shop-16e11f6ce9774679991fe27e7806c943) by Sergei Bashirov (https://sketchfab.com/failyren) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

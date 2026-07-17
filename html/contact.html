@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/color palette.css" />
+    <link rel="stylesheet" href="../style/nav.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/contact.css" />
+    <script src="../script/darkswitch.js"></script>
+  </head>
+  <body>
+    <div class="contact-container">
+      <div class="nav-container">
+        <div class="announcement-bar">
+          <p>🎉50% OFF ON ALL ITEMS EVERY FRIDAY!</p>
+        </div>
+        <div class="nav-body">
+          <img src="../img/logo.png" alt="" class="logo" style="width: 9em" />
+          <ul class="nav-btns">
+            <a href="Friday.html">
+              <li>Home</li>
+            </a>
+            <a href="products.html">
+              <li>Products</li>
+            </a>
+            <a href="about.html">
+              <li>About</li>
+            </a>
+            <a href="contact.html">
+              <li>Contact</li>
+            </a>
+          </ul>
+          <div class="icons">
+            <a href="" class="theme-toggle"
+              ><img
+                src="../img/dark-mode.png"
+                alt=""
+                class="theme-toggle nav-icon-img light-ice"
+            /></a>
+            <a href="" class="theme-toggle"
+              ><img
+                src="../img/light-mode.png"
+                alt=""
+                class="theme-toggle nav-icon-img dark-ice"
+            /></a>
+          
+            <!--  -->
+          <div class="wishlist-container">
+          <a href="#" class="wishlist-header-btn">
+        <i class="fa-regular fa-heart"></i>
+            <span class="wishlist-count">0</span>
+          </a>
+
+        <div class="wishlist-dropdown">
+    <div class="wishlist-dropdown-header">
+      <h3 class="wishlist-dropdown-title">Your Wishlist</h3>
+      <span class="wishlist-items-count">0 items</span>
+    </div>
+
+    <div class="wishlist-items-container">
+      <p class="empty-wishlist-msg">Your wishlist is empty</p>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+
+            <a href="cart.html" class="cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a href="nav.html" class="user-account"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+            <a href="signin.html" style="font-size: 1rem" class="sign-out-nav"
+              >sign out</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="contact-heading">
+        <h2>Contact US</h2>
+        <h4>010123456789</h4>
+      </div>
+      <div class="footer-container">
+        <div class="footer-body">
+          <div class="logo-container-footer">
+            <span>
+              <img
+                src="../img/logo.png"
+                alt=""
+                class="logo-footer"
+                style="width: 8em"
+              />
+            </span>
+            <p class="logo-text-footer">
+              Friday Ice Cream brings happiness to every moment with delicous
+              ice cream and refreshing drinks
+            </p>
+          </div>
+          <div class="quick-links">
+            <p class="quick-link footer-text">Quick Links</p>
+            <ul class="quick-link-list">
+              <li><a href="Friday.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <div class="newsletter-text footer-text">Newsletter</div>
+            <p class="subscribe-txt">
+              Subscribe to get special offers and updates
+            </p>
+            <form action="" class="email-submit">
+              <input type="email" name="" id="" placeholder="email" required />
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright-footer">
+          <p>
+            &copy; <span id="year"></span> Friday Ice Cream. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../script/wishlist-global.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.addEventListener("click", (e) => {
+      if (e.target.closest(".theme-toggle.light-ice")) {
+        e.preventDefault();
+        document.querySelector(".nav-container").classList.add("dark-mode");
+      }
+      if (e.target.closest(".theme-toggle.dark-ice")) {
+        e.preventDefault();
+        document.querySelector(".nav-container").classList.remove("dark-mode");
+      }
+    });
+  </script>
+</html>
