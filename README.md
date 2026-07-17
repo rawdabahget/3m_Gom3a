@@ -25,23 +25,25 @@ We deliberately chose to stick to the fundamentals to keep the site incredibly l
 
 ## 📸 Interface Preview
 
-### 1. Sign up Page
+### 1. Sign In Page
 ![Sign In Page](signin.png)
 
 ### 2. Home Page - Hero & Offers Slider
 ![Home Slider](Home_page.png)
 
+### 3. Home Page - Featured Products & Introduction
+![Featured Products](featured_products.png)
 
-### 3. Products Catalog Page
+### 4. Products Catalog Page
 ![Products Page](products.png)
 
-### 4. Interactive Shopping Cart
+### 5. Interactive Shopping Cart
 ![Cart Page](cart.png)
 
-### 5. About Page - Introduction & Brand Story
+### 6. About Page - Introduction & Brand Story
 ![About Intro](about_intro.png)
 
-### 6. About Page - Our Core Values & Timeline Journey
+### 7. About Page - Our Core Values & Timeline Journey
 ![Our Values and Journey](about_values.png)
 
 ---
@@ -50,6 +52,10 @@ We deliberately chose to stick to the fundamentals to keep the site incredibly l
 
 This project was built with a lot of coding hours (and probably a few actual ice cream breaks) by:
 * **Eyad Ibrahim**
+* **Ahmed Ali**
+* **Rawda Mohamed**
+* **Basel Ahmed**
+* **Seif Islam**
 * **Ahmed Ali**
 * **Rawda Mohamed**
 * **Basel Ahmed**
