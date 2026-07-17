@@ -25,7 +25,7 @@ We deliberately chose to stick to the fundamentals to keep the site incredibly l
 
 ## 📸 Interface Preview
 
-### 1. Sign In Page
+### 1. Sign Up Page
 ![Sign In Page](signin.png)
 
 ### 2. Home Page - Hero & Offers Slider
