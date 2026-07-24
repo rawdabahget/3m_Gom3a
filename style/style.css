@@ -58,10 +58,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
 }
 
 body {
+    font-family: 'Cairo', sans-serif;
     background-image: url('../img/background_1.png');
     background-size: cover;
     background-position: center;
@@ -80,14 +80,14 @@ body {
     align-items: center;
 }
 
-.logo {
+.header-container .logo {
     font-size: 24px;
     font-weight: 700;
     color: #0d47a1;
     letter-spacing: 1px;
 }
 
-.logo span {
+.header-container .logo span {
     color: #ff4081;
     font-size: 16px;
     display: block;

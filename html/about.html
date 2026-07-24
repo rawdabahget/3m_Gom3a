@@ -87,7 +87,6 @@
       <source src="../music.mp3" type="audio/mpeg" />
     </audio>
 
-    <!-- LTR Nav bar -->
     <div class="nav-container" dir="ltr">
       <div class="announcement-bar">
         <p>🎉50% OFF ON ALL ITEMS EVERY FRIDAY!</p>
@@ -122,29 +121,27 @@
               class="theme-toggle nav-icon-img dark-ice"
           /></a>
 
-
-
           <!-- /////////////////////////////new//////////////////////////////////////////////// -->
           <div class="wishlist-container">
-  <a href="#" class="wishlist-header-btn">
-    <i class="fa-regular fa-heart"></i>
-    <span class="wishlist-count">0</span>
-  </a>
+            <a href="#" class="wishlist-header-btn">
+              <i class="fa-regular fa-heart"></i>
+              <span class="wishlist-count">0</span>
+            </a>
 
-  <div class="wishlist-dropdown">
-    <div class="wishlist-dropdown-header">
-      <h3 class="wishlist-dropdown-title">Your Wishlist</h3>
-      <span class="wishlist-items-count">0 items</span>
-    </div>
+            <div class="wishlist-dropdown">
+              <div class="wishlist-dropdown-header">
+                <h3 class="wishlist-dropdown-title">Your Wishlist</h3>
+                <span class="wishlist-items-count">0 items</span>
+              </div>
 
-    <div class="wishlist-items-container">
-      <p class="empty-wishlist-msg">Your wishlist is empty</p>
-    </div>
+              <div class="wishlist-items-container">
+                <p class="empty-wishlist-msg">Your wishlist is empty</p>
+              </div>
 
-    <!-- <a href="wishlist.html" class="view-wishlist-btn">View Full Wishlist</a> -->
-  </div>
-</div>
-<!--  -->
+              <!-- <a href="wishlist.html" class="view-wishlist-btn">View Full Wishlist</a> -->
+            </div>
+          </div>
+          <!--  -->
 
           <a href="cart.html" class="cart"
             ><i class="fa-solid fa-cart-shopping"></i
@@ -152,7 +149,9 @@
           <a href="nav.html" class="user-account"
             ><i class="fa-solid fa-user"></i
           ></a>
-          <a href="signin.html" style="font-size: 1rem">sign out</a>
+          <a href="signin.html" style="font-size: 1rem" class="sign-out-nav"
+            >sign out</a
+          >
         </div>
       </div>
     </div>
@@ -306,8 +305,8 @@
             />
           </span>
           <p class="logo-text-footer">
-            Friday Ice Cream brings happiness to every moment with delicous
-            ice cream and refreshing drinks
+            Friday Ice Cream brings happiness to every moment with delicous ice
+            cream and refreshing drinks
           </p>
         </div>
         <div class="quick-links">
@@ -372,8 +371,18 @@
       startMusic();
 
       // Trigger instantly on any user interaction event
-      ["pointerdown", "click", "keydown", "scroll", "touchstart", "mouseover"].forEach((evt) => {
-        document.addEventListener(evt, startMusic, { once: true, passive: true });
+      [
+        "pointerdown",
+        "click",
+        "keydown",
+        "scroll",
+        "touchstart",
+        "mouseover",
+      ].forEach((evt) => {
+        document.addEventListener(evt, startMusic, {
+          once: true,
+          passive: true,
+        });
       });
 
       // 3D Model setup

@@ -255,7 +255,14 @@
 .cart-form {
   display: flex;
   gap: 0.5em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.coupon-feedback {
+  font-size: 0.9rem;
+  margin-top: 0.4em;
+  margin-bottom: 1.4em;
+  font-weight: 600;
 }
 
 .cart-form input {

@@ -168,7 +168,8 @@ document.addEventListener("DOMContentLoaded", () => {
         feedback = document.createElement("div");
         feedback.className = "coupon-feedback";
         feedback.style.fontSize = "0.9rem";
-        feedback.style.marginTop = "0.6em";
+        feedback.style.marginTop = "0.4em";
+        feedback.style.marginBottom = "1.4em";
         feedback.style.fontWeight = "600";
         cartForm.parentNode.insertBefore(feedback, cartForm.nextSibling);
       }
