@@ -500,3 +500,35 @@ body.dark-mode,
 .dark-mode .checkout-modal-text {
   color: #cbd5e1 !important;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .cart-items-container {
+    flex-direction: column;
+    margin: 2em 1em;
+  }
+  
+  .cart-total {
+    max-width: 100%;
+  }
+  
+  .cart-div {
+    padding: 1.5em;
+  }
+  
+  .cart-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  .cart-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .cart-table th, .cart-table td {
+    padding: 1em;
+  }
+}

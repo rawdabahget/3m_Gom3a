@@ -514,3 +514,28 @@ input.input-error {
   color: #f87171 !important;
   border-color: #7f1d1d !important;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .signINWsignOutForm {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+  
+  .welcomeBack,
+  .joinFridayFamily {
+    width: 100%;
+    max-width: 100%;
+    padding: 2em 1.5em;
+  }
+  
+  .textSignin {
+    font-size: 2.5rem;
+  }
+  
+  div[class*="3mGom3a"],
+  .soretElBaskota {
+    display: none !important;
+  }
+}

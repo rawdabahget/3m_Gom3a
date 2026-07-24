@@ -269,3 +269,30 @@ body {
 .dark-mode .about-content p {
   color: #ffffff;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel {
+    height: 300px;
+  }
+  
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-images-wrapper,
+  .about-content {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .about-content {
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .featured-section {
+    padding: 40px 10px;
+  }
+}

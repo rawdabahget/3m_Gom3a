@@ -463,3 +463,50 @@ body {
   color: #ff6b8b !important;
   border-color: #ff6b8b !important;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1em;
+    padding: 15px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .hero-title-section h1 {
+    font-size: 32px;
+  }
+  
+  .team-grid {
+    flex-direction: column;
+  }
+  
+  .staff-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .timeline-line {
+    display: none;
+  }
+  
+  .main-content-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+}

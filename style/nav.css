@@ -533,3 +533,60 @@ a.dark-ice,
 .dark-mode .empty-wishlist-msg {
   color: #94a3b8 !important;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .nav-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1em;
+    padding: 1em 0.5em;
+  }
+  
+  .logo,
+  .nav-body .logo,
+  img.logo {
+    justify-self: center;
+    padding-left: 0;
+  }
+  
+  .nav-body ul {
+    gap: 1.5em;
+    justify-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-body ul li {
+    font-size: 1.1rem;
+  }
+  
+  .icons {
+    justify-self: center;
+    padding-right: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .icons a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  
+  .mini-cart-dropdown, .wishlist-dropdown {
+    right: 50%;
+    transform: translateX(50%) translateY(12px);
+    width: 300px;
+    min-width: unset;
+  }
+  
+  .cart-hover-wrapper:hover .mini-cart-dropdown,
+  .mini-cart-dropdown:hover,
+  .wishlist-container:hover .wishlist-dropdown {
+    transform: translateX(50%) translateY(4px);
+  }
+}
+
