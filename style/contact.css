@@ -45,3 +45,14 @@
 .dark-mode .contact-heading h4 {
   color: #ffffff !important;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-heading h2 {
+    font-size: 3.5rem;
+  }
+  
+  .contact-heading h4 {
+    font-size: 1.5rem;
+  }
+}
